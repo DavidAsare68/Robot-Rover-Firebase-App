@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Mini Robot Rover</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_open">Open Instructions</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="register">Register</string>
+    <string name="signout">Signout</string>
+    <string name="skip">Skip</string>
+    <string name="instructionText">There are control buttons on the next page to manually control the car. The car will calculate the speed and distance as it moves. When getting too close to an object, you can also click the stop button to manually stop the car.</string>
+    <string name="rpm">RPM = </string>
+    <string name="dist">DIST = </string>
+    <string name="defaultValue">0</string>
+    <string name="backward">backward</string>
+    <string name="right">right</string>
+    <string name="left">left</string>
+    <string name="forward">forward</string>
+    <string name="stop">stop</string>
+    <string name="welcomeText">Welcome to the MiniRobot App. User will need to connect the app to the car by using wifi connection. This will allow us to send data from the raspberry pi to the app we made on android studio. Click next to continue reading instructions, or click skip button to get to the controls page.</string>
+
+</resources>

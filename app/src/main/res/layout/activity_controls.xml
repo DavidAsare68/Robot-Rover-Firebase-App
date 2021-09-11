@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DD599"
+    tools:context=".Controls"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@android:dimen/app_icon_size"
+        android:background="@android:color/background_dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rpmLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/rpm"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rpm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/defaultValue"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/distanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/dist"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/defaultValue"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:padding="10dp"
+        android:layout_marginBottom="100dp"
+        android:baselineAligned="false">
+
+        <TableLayout
+            android:id="@+id/controlLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_weight="10"
+            android:gravity="bottom">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/forwardBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#4DD599"
+                    android:contentDescription="@string/forward"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_iconmonstr_arrow_27"
+                    android:text="@string/forward" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/leftBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:background="#4DD599"
+                    android:contentDescription="@string/left"
+                    android:rotation="180"
+                    android:src="@drawable/ic_iconmonstr_arrow_27"
+                    android:text="@string/left" />
+
+                <ImageButton
+                    android:id="@+id/rightBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:background="#4DD599"
+                    android:contentDescription="@string/right"
+                    android:src="@drawable/ic_iconmonstr_arrow_27"
+                    android:text="@string/right" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/backwardBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#4DD599"
+                    android:contentDescription="@string/backward"
+                    android:rotation="90"
+                    android:src="@drawable/ic_iconmonstr_arrow_27"
+                    android:text="@string/backward" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/stopLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:gravity="bottom">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/stopBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#4DD599"
+                    android:contentDescription="@string/stop"
+                    android:src="@drawable/ic_iconmonstr_stop_6"
+                    android:text="@string/stop" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
